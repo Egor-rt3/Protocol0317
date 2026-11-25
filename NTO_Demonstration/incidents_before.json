@@ -1,0 +1,148 @@
+{
+  "incidents": [
+    {
+      "id": "air_filter",
+      "title": "Засорён фильтр",
+      "description": "Проведите диагностику загрязнения и включите вентиляцию на 2, терминал на 1.",
+      "requiredPower": 3,
+      "requiresVent": true,
+      "requiresTerminal": true,
+      "requiresLight": false,
+      "reward": 20,
+      "penalty": 12,
+      "roomIndex": 2
+    },
+    {
+      "id": "sensor_fault",
+      "title": "Сбой датчика",
+      "description": "Сверьте датчики при включённом свете и терминале.",
+      "requiredPower": 2,
+      "requiresVent": false,
+      "requiresTerminal": true,
+      "requiresLight": true,
+      "reward": 20,
+      "penalty": 12,
+      "roomIndex": 0
+    },
+    {
+      "id": "pressure_spike",
+      "title": "Скачок давления",
+      "description": "Переведите вентиляцию на 2. Терминал разрешено отключить.",
+      "requiredPower": 2,
+      "requiresVent": true,
+      "requiresTerminal": false,
+      "requiresLight": false,
+      "reward": 20,
+      "penalty": 12,
+      "roomIndex": 1
+    },
+    {
+      "id": "backup_signal",
+      "title": "Неизвестный сигнал",
+      "description": "Проверьте журнал терминала и подтвердите источник сигнала.",
+      "requiredPower": 1,
+      "requiresVent": false,
+      "requiresTerminal": true,
+      "requiresLight": false,
+      "reward": 20,
+      "penalty": 12,
+      "roomIndex": 3
+    },
+    {
+      "id": "airlock_pressure",
+      "title": "Разгерметизация шлюза",
+      "description": "Для компенсации давления требуется вентиляция на 2.",
+      "requiredPower": 2,
+      "requiresVent": true,
+      "requiresTerminal": false,
+      "requiresLight": false,
+      "reward": 20,
+      "penalty": 12,
+      "roomIndex": 3
+    },
+    {
+      "id": "camera_blackout",
+      "title": "Потеря изображения",
+      "description": "Восстановите питание света и терминала для проверки камер.",
+      "requiredPower": 2,
+      "requiresVent": false,
+      "requiresTerminal": true,
+      "requiresLight": true,
+      "reward": 20,
+      "penalty": 12,
+      "roomIndex": 0
+    },
+    {
+      "id": "cooling_loop",
+      "title": "Перегрев охлаждения",
+      "description": "Система охлаждения зависит от вентиляции: подайте на неё 2 единицы.",
+      "requiredPower": 2,
+      "requiresVent": true,
+      "requiresTerminal": false,
+      "requiresLight": false,
+      "reward": 20,
+      "penalty": 12,
+      "roomIndex": 0
+    },
+    {
+      "id": "archive_access",
+      "title": "Повреждён архив",
+      "description": "Восстановите доступ к журналу через терминал.",
+      "requiredPower": 1,
+      "requiresVent": false,
+      "requiresTerminal": true,
+      "requiresLight": false,
+      "reward": 20,
+      "penalty": 12,
+      "roomIndex": 0
+    },
+    {
+      "id": "toxic_leak",
+      "title": "Утечка реагента",
+      "description": "Срочно включите вентиляцию на 2, терминал на 1 для контроля.",
+      "requiredPower": 3,
+      "requiresVent": true,
+      "requiresTerminal": true,
+      "requiresLight": false,
+      "reward": 20,
+      "penalty": 12,
+      "roomIndex": 1
+    },
+    {
+      "id": "emergency_lamps",
+      "title": "Отказ аварийных ламп",
+      "description": "Проверьте свет и терминал.",
+      "requiredPower": 2,
+      "requiresVent": false,
+      "requiresTerminal": true,
+      "requiresLight": true,
+      "reward": 20,
+      "penalty": 12,
+      "roomIndex": 2
+    },
+    {
+      "id": "core_pressure",
+      "title": "Давление реактора",
+      "description": "Вентиляция 2 и терминал 1 обеспечат контроль давления.",
+      "requiredPower": 3,
+      "requiresVent": true,
+      "requiresTerminal": true,
+      "requiresLight": false,
+      "reward": 20,
+      "penalty": 12,
+      "roomIndex": 0
+    },
+    {
+      "id": "final_audit",
+      "title": "Финальная проверка",
+      "description": "Завершите протокол: свет 1, терминал 1, остальные ресурсы по усмотрению.",
+      "requiredPower": 2,
+      "requiresVent": false,
+      "requiresTerminal": true,
+      "requiresLight": true,
+      "reward": 20,
+      "penalty": 12,
+      "roomIndex": 3
+    }
+  ]
+}
